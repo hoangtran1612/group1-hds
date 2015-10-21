@@ -1,0 +1,150 @@
+footer{
+    width: 100%;
+    background-color: #00CC00;
+    color: white;
+    position: relative;
+    bottom: 0;
+    border-top: solid 3px black;
+}
+
+.navbar{
+    background-color: #B61014;
+    color: white;
+}
+
+.navmenu{
+    width: 100%;
+    display: inline-block;
+}
+.navhead{
+    width: 100%;
+    display: inline-block;
+    background-color: #B61014;
+    padding-top: 0;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-bottom: 0;
+}
+
+.container-fluid{
+    padding: 0;
+}
+
+.menubutton{
+    background-color: grey;
+}
+
+.nav>li>a{
+    background-color: #B61014;
+    color:white;
+    transition: background-color 600ms;
+}
+
+.nav>li>a:focus, .nav>li>a:hover{
+    background-color: black;
+    color: white;
+}
+
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover{
+    background-color: black;
+    color: white;
+}
+
+.cart{
+    display: inline-block;
+    position: relative;
+    top: 4px;
+    width: 100px;
+    padding-left: 10px;
+}
+
+.cart:link, .cart:visited, .cart:hover{
+    color:white;
+    text-decoration: none;
+}
+
+.imagebox{
+    width: 100%;
+}
+
+.navbar-brand{
+    padding: 0;
+}
+
+.navbar-nav{
+    padding-bottom: 0;
+}
+
+.sidebox{
+    width: 100%;
+    height: 400px;
+    border: solid blue 2px;
+}
+
+#search{
+    display: inline-block;
+    position: relative;
+    padding-left: 15px;
+    top: 14px;
+}
+.searchform {
+    margin: 0;
+    padding: 0;
+    height:25px;
+    width:278px;
+}
+.searchform input[type=text]
+{
+    width:200px;
+    height:25px;
+    border:0;
+    background:white;
+    float:left;
+    margin:0;
+    padding:0;
+}
+.searchform input[type=submit]
+{
+
+    float:right;
+    margin:0;
+    height:23px;
+    padding-top:0;
+}
+
+#leftbox, #rightbox{
+    width: 100%;
+    height: 300px;
+    display: inline-block;
+    border: solid 2px black;
+}
+
+#midbox{
+    width: 100%;
+    display: inline-block;
+    border: solid 2px red;
+}
+
+.productbox{
+    height:150px;
+    width: 20%;
+    border: solid #B61014 2px;
+    display: inline-block;
+    float: left;
+}
+
+@media screen and (max-width: 991px){
+    #leftbox, #rightbox{
+        visibility: hidden;
+        height: 0;
+    }
+    .productbox{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .productbox{
+        width: 100%;
+    }
+}
